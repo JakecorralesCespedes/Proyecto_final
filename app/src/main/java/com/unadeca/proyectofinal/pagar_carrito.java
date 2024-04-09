@@ -7,26 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Tacontento extends AppCompatActivity {
+public class pagar_carrito extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tacontento);
+        setContentView(R.layout.activity_pagar_carrito);
         //Definir funciones de los botones
-        ImageView btnregresar = findViewById(R.id.atras);
-        ImageView btntacos = findViewById(R.id.tacos);
+        ImageView btnregresar = findViewById(R.id.atras3);
+        ImageView btnpagar = findViewById(R.id.buttonpagar);
         btnregresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tacontento.this, Home_Screen_Delivery_list.class);
+                Intent intent = new Intent(pagar_carrito.this, tacontento_agregar_carito.class);
                 startActivity(intent);
             }
         });
-        btntacos.setOnClickListener(new View.OnClickListener() {
+        btnpagar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tacontento.this, tacontento_agregar_carito.class);
+                Intent intent = new Intent(pagar_carrito.this, Pago_final.class);
                 startActivity(intent);
             }
         });
