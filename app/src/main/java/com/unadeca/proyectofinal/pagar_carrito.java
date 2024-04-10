@@ -147,5 +147,17 @@ public class pagar_carrito extends AppCompatActivity {
         double cantidad_total = cantidad_tacos;
         cantidad4.setText("" + cantidad_total);
 
+
+    }
+
+        // En la actividad de origen
+
+        Intent intent = new Intent(this, Pago_final.class);
+        int Subtotal = Subtotal
+        intent.putExtra("clave", valor); // 'valor' es el dato que quieres enviar
+
+        startActivity(intent);
+
+
     }
 }
