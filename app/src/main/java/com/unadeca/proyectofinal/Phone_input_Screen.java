@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class Phone_input_Screen extends AppCompatActivity {
     private EditText numeroEdt;
     private ImageView loginBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,14 +36,15 @@ public class Phone_input_Screen extends AppCompatActivity {
         loginBtn = findViewById(R.id.Next);
 
         loginBtn.setOnClickListener(v -> {
-            if (numeroEdt.getText().toString().isEmpty()) {
+            String numero = numeroEdt.getText().toString();
+            if (numero.isEmpty()) {
                 Toast.makeText(Phone_input_Screen.this, "colocar numero de telefono registrado", Toast.LENGTH_SHORT).show();
-            } else if (numeroEdt.getText().toString().equals("84558763")) {
+            } else if (numero.length() == 8) {
                 startActivity(new Intent(Phone_input_Screen.this, Home_Screen_Delivery_list.class));
             } else {
                 Toast.makeText(Phone_input_Screen.this, "tu numero registrado es incorrecto", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
 }
-

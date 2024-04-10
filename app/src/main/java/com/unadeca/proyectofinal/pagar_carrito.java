@@ -1,12 +1,10 @@
 package com.unadeca.proyectofinal;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -66,7 +64,8 @@ public class pagar_carrito extends AppCompatActivity {
             public void onClick(View v) {
                 cantidad_tacos++;
                 actualizar_cantidad_total(cantidad1);
-                actualizar_precio_producto(subtotal);
+                actualizar_precio_producto();
+                subtotal_final(subtotal);
             }
         });
         btnrestacar1.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +74,9 @@ public class pagar_carrito extends AppCompatActivity {
                 if (cantidad_tacos > 0){
                     cantidad_tacos--;
                     actualizar_cantidad_total(cantidad1);
-                    actualizar_precio_producto(subtotal);
+                    actualizar_precio_producto();
+                    subtotal_final(subtotal);
+
                 }
             }
         });
@@ -84,7 +85,9 @@ public class pagar_carrito extends AppCompatActivity {
             public void onClick(View v) {
                 cantidad_huaraches++;
                 actualizar_cantidad_total2(cantidad2);
-                actualizar_precio_producto2(subtotal);
+                actualizar_precio_producto2();
+                subtotal_final(subtotal);
+
             }
         });
         btnrestacar2.setOnClickListener(new View.OnClickListener() {
@@ -93,7 +96,9 @@ public class pagar_carrito extends AppCompatActivity {
                 if (cantidad_huaraches > 0) {
                     cantidad_huaraches--;
                     actualizar_cantidad_total2(cantidad2);
-                    actualizar_precio_producto2(subtotal);
+                    actualizar_precio_producto2();
+                    subtotal_final(subtotal);
+
                 }
             }
         });
@@ -102,7 +107,9 @@ public class pagar_carrito extends AppCompatActivity {
             public void onClick(View v) {
                 cantidad_tacos_res++;
                 actualizar_cantidad_total3(cantidad3);
-                actualizar_precio_producto3(subtotal);
+                actualizar_precio_producto3();
+                subtotal_final(subtotal);
+
             }
         });
         btnrestacar3.setOnClickListener(new View.OnClickListener() {
@@ -111,7 +118,9 @@ public class pagar_carrito extends AppCompatActivity {
                 if (cantidad_tacos_res > 0) {
                     cantidad_tacos_res--;
                     actualizar_cantidad_total3(cantidad3);
-                    actualizar_precio_producto3(subtotal);
+                    actualizar_precio_producto3();
+                    subtotal_final(subtotal);
+
                 }
             }
         });
@@ -120,7 +129,9 @@ public class pagar_carrito extends AppCompatActivity {
             public void onClick(View v) {
                 cantidad_bowl_carne++;
                 actualizar_cantidad_total4(cantidad4);
-                actualizar_precio_producto4(subtotal);
+                actualizar_precio_producto4();
+                subtotal_final(subtotal);
+
             }
         });
         btnrestacar4.setOnClickListener(new View.OnClickListener() {
@@ -129,47 +140,56 @@ public class pagar_carrito extends AppCompatActivity {
                 if (cantidad_bowl_carne > 0) {
                     cantidad_bowl_carne--;
                     actualizar_cantidad_total4(cantidad4);
-                    actualizar_precio_producto4(subtotal);
+                    actualizar_precio_producto4();
+                    subtotal_final(subtotal);
+
                 }
             }
         });
     }
-
-    private void actualizar_cantidad_total(TextView cantidad1) {
+    public void actualizar_cantidad_total(TextView cantidad1) {
         double cantidad_total = cantidad_tacos;
         cantidad1.setText("" + cantidad_total);
     }
-    private void actualizar_precio_producto(TextView subtotal){
-        double CantidadTotal = cantidad_tacos * precio_tacos;
-        subtotal.setText("$" + CantidadTotal);
+    public double actualizar_precio_producto(){
+        return cantidad_tacos * precio_tacos;
     }
-        private void actualizar_cantidad_total2(TextView cantidad2) {
-            double cantidad_total = cantidad_huaraches;
-            cantidad2.setText("" + cantidad_total);
-        }
-    private void actualizar_precio_producto2(TextView subtotal){
-        double CantidadTotal = cantidad_huaraches * precio_huaraches;
-        subtotal.setText("$" + CantidadTotal);
+    public void actualizar_cantidad_total2(TextView cantidad2) {
+        double cantidad_total = cantidad_huaraches;
+        cantidad2.setText("" + cantidad_total);
     }
-    private void actualizar_cantidad_total3(TextView cantidad3) {
+
+    public double actualizar_precio_producto2(){
+        return cantidad_huaraches * precio_huaraches;
+    }
+
+    public void actualizar_cantidad_total3(TextView cantidad3) {
         double cantidad_total = cantidad_tacos_res;
         cantidad3.setText("" + cantidad_total);
     }
-    private void actualizar_precio_producto3(TextView subtotal){
-        double CantidadTotal = cantidad_huaraches * precio_huaraches;
-        subtotal.setText("$" + CantidadTotal);
-    }
-    private void actualizar_precio_producto4(TextView subtotal) {
-        double CantidadTotal = cantidad_tacos * precio_tacos;
-        subtotal.setText("$" + CantidadTotal);
-    }
 
-    private void actualizar_cantidad_total4(TextView cantidad4) {
-        double cantidad_total = cantidad_tacos;
+    public double actualizar_precio_producto3(){
+        return cantidad_tacos_res * precio_tacos_res;
+    }
+    public void actualizar_cantidad_total4(TextView cantidad4) {
+        double cantidad_total = cantidad_bowl_carne;
         cantidad4.setText("" + cantidad_total);
+    }
+    public double actualizar_precio_producto4(){
+        return cantidad_bowl_carne * precio_bowl_carne;
+    }
 
+    private void subtotal_final(TextView subtotal){
+        double subtotal1 = actualizar_precio_producto();
+        double subtotal2 = actualizar_precio_producto2();
+        double subtotal3 = actualizar_precio_producto3();
+        double subtotal4 = actualizar_precio_producto4();
+
+        double subtotalFinal = subtotal1 + subtotal2 + subtotal3 + subtotal4;
+        subtotal.setText("" + subtotalFinal);
     }
 
 
 
-}
+    }
+
