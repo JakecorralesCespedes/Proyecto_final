@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo"
     tools:context=".pagar_carrito">
 
     <ImageView
@@ -44,12 +43,13 @@
         android:id="@+id/tacos"
         android:layout_width="83dp"
         android:layout_height="80dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="#ECF0FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.75"
         app:srcCompat="@drawable/tacos" />
 
     <TextView
@@ -79,16 +79,18 @@
         app:layout_constraintVertical_bias="0.206" />
 
 
+
     <ImageView
         android:id="@+id/huarache"
         android:layout_width="83dp"
         android:layout_height="80dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="204dp"
         android:backgroundTint="#ECF0FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.75"
         app:srcCompat="@drawable/huarache" />
 
     <TextView
@@ -118,66 +120,119 @@
         app:layout_constraintVertical_bias="0.326" />
 
     <ImageView
-        android:id="@+id/sumacar1"
-        android:layout_width="60dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#ECF0FB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162"
-        app:srcCompat="@drawable/agregarverde" />
-
-    <ImageView
-        android:id="@+id/restacar1"
-        android:layout_width="30dp"
-        android:layout_height="27dp"
-        android:backgroundTint="#ECF0FB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.66"
-        app:layout_constraintStart_toEndOf="@+id/texthua"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169"
-        app:srcCompat="@drawable/restacarrito" />
-
-    <ImageView
         android:id="@+id/sumacar2"
         android:layout_width="60dp"
         android:layout_height="62dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="200dp"
         android:backgroundTint="#ECF0FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/agregarverde" />
+        app:layout_constraintVertical_bias="1.55"
+        app:srcCompat="@drawable/agregarverde"
+        />
 
     <ImageView
         android:id="@+id/restacar2"
         android:layout_width="30dp"
         android:layout_height="27dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="212dp"
         android:backgroundTint="#ECF0FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toEndOf="@+id/texthua"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.72"
+        app:srcCompat="@drawable/restacarrito"
+        />
+
+
+    <ImageView
+        android:id="@+id/sumacar1"
+        android:layout_width="60dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#ECF0FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/agregarverde"
+        />
+
+    <ImageView
+        android:id="@+id/restacar1"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#ECF0FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toEndOf="@+id/texthua"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/restacarrito" />
+
+    <TextView
+        android:id="@+id/cantidadtotal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/cantidadtotal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:id="@+id/cantidadtotal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372" />
+
+    <TextView
+        android:id="@+id/cantidadtotal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478" />
 
     <ImageView
         android:id="@+id/tacores"
         android:layout_width="83dp"
         android:layout_height="80dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginTop="284dp"
         android:backgroundTint="#ECF0FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tacoysalsa" />
+        app:layout_constraintVertical_bias="1.75"
+        app:srcCompat="@drawable/tacoysalsa"/>
 
     <TextView
         android:id="@+id/textres"
@@ -209,61 +264,40 @@
         android:id="@+id/sumacar3"
         android:layout_width="60dp"
         android:layout_height="62dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="284dp"
         android:backgroundTint="#ECF0FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/agregarverde" />
-
-    <ImageView
-        android:id="@+id/sumacar4"
-        android:layout_width="60dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="412dp"
-        android:backgroundTint="#ECF0FB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/agregarverde" />
-
-    <ImageView
-        android:id="@+id/restacar4"
-        android:layout_width="30dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="424dp"
-        android:backgroundTint="#ECF0FB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toEndOf="@+id/texthua"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/restacarrito" />
+        app:layout_constraintVertical_bias="1.55"
+        app:srcCompat="@drawable/agregarverde"/>
 
     <ImageView
         android:id="@+id/restacar3"
         android:layout_width="30dp"
         android:layout_height="27dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="296dp"
         android:backgroundTint="#ECF0FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toEndOf="@+id/texthua"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/restacarrito" />
+        app:layout_constraintVertical_bias="1.72"
+        app:srcCompat="@drawable/restacarrito"/>
 
     <ImageView
         android:id="@+id/bowl"
         android:layout_width="83dp"
         android:layout_height="80dp"
-        android:layout_marginTop="392dp"
+        android:layout_marginTop="364dp"
         android:backgroundTint="#ECF0FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/combo" />
+        app:layout_constraintVertical_bias="1.75"
+        app:srcCompat="@drawable/combo"/>
 
     <TextView
         android:id="@+id/combobowl"
@@ -292,6 +326,31 @@
         app:layout_constraintVertical_bias="0.549" />
 
     <ImageView
+        android:id="@+id/sumacar4"
+        android:layout_width="60dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="348dp"
+        android:backgroundTint="#ECF0FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.55"
+        app:srcCompat="@drawable/agregarverde"/>
+    <ImageView
+        android:id="@+id/restacar4"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="360dp"
+        android:backgroundTint="#ECF0FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/texthua"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.72"
+        app:srcCompat="@drawable/restacarrito" />
+
+    <ImageView
         android:id="@+id/buttonpromo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -305,7 +364,7 @@
         app:srcCompat="@drawable/promocional" />
 
     <TextView
-        android:id="@+id/subtotal"
+        android:id="@+id/subtotaltxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Subtotal"
@@ -318,7 +377,7 @@
         app:layout_constraintVertical_bias="0.708" />
 
     <TextView
-        android:id="@+id/envio"
+        android:id="@+id/enviotxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Envio"
@@ -331,7 +390,7 @@
         app:layout_constraintVertical_bias="0.747" />
 
     <TextView
-        android:id="@+id/total"
+        android:id="@+id/totaltxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total"
@@ -344,7 +403,7 @@
         app:layout_constraintVertical_bias="0.785" />
 
     <TextView
-        android:id="@+id/cantidad1"
+        android:id="@+id/subtotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$146"
@@ -357,7 +416,7 @@
         app:layout_constraintVertical_bias="0.708" />
 
     <TextView
-        android:id="@+id/cantidad2"
+        android:id="@+id/envio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$3.8"
@@ -370,7 +429,7 @@
         app:layout_constraintVertical_bias="0.747" />
 
     <TextView
-        android:id="@+id/cantidad3"
+        android:id="@+id/total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$149"
