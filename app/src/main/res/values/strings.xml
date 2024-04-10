@@ -5,12 +5,30 @@
     <string name="menuam">Desayuno</string>
     <string name="horarioam">7:00AM - 10:20AM</string>
     <string name="ranking">4.7★  (500+) Costo de envio: $1 km</string>
-    <string name="artfav1">#1 de tus favo...</string>
-    <string name="artfav2">#2 de tus fav...</string>
-    <string name="artfav3">#3 de tus fav...</string>
+    <string name="artfav1">#1 de tus favo…</string>
+    <string name="artfav2">#2 de tus fav…</string>
+    <string name="artfav3">#3 de tus fav…</string>
     <string name="combo1">Combo tacos ticos</string>
-    <string name="descrip1">4 tacos tortilla de maíz fritas, rellenas de carne, repollo, salsa de tomate y mayone...</string>
+    <string name="descrip1">4 tacos tortilla de maíz fritas, rellenas de carne, repollo, salsa de tomate y mayone…</string>
+    <string name="descrip2">6 tacos tortilla de maíz fritas, rellenas dos de carne, de res, dos de queso y dos de pollo, salsa de tomate…</string>
+    <string name="INFO_LS">Use your unber accont to get started</string>
+    <string name="numero_telefono">23–21–88–76</string>
     <string name="combo2">Combo tacos nachos</string>
-    <string name="descrip2">6 tacos tortilla de maíz fritas, rellenas dos de carne, de res, dos de queso y dos de pollo, salsa de tomate...</string>
-
+    <string name="pastor">Tacos al Pastor</string>
+    <string name="precio">$25</string>
+    <string name="menos">-</string>
+    <string name="suma">+</string>
+    <string name="cerrar">X</string>
+    <string name="cantidad">cantidad</string>
+    <string name="agregarcarrito">Agregar al carrito $25</string>
+    <string name="descrip3">Descripcion del Producto Una deliciosa tortilla acompañada de carne de la mejor calidad y olores frescos, una experiencia inolvidable.</string>
+    <string name="info2">Enter your mobile number</string>
+    <string name="Mobile">Mobile number</string>
+    <string name="info3"> By proceeding, you consent to get calls, Whatsapp or SMS
+    messages, including by automated means, from uber and its
+        affiliates to the number provided.</string>
+    <string name="Checkout">Checkout</string>
+    <string name="Tacontento">Tacontento</string>
+    <string name="opciones_de_Entrega">Opciones de Entrega</string>
+    <string name="Resumen_de_la_Orden">Resumen de la Orden</string>
 </resources>

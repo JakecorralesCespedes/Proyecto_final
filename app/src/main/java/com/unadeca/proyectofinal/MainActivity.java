@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         TimerTask tarea = new TimerTask() {
             @Override
             public void run() {
-                Intent intent =  new Intent(MainActivity.this, Home_Screen_Delivery_list.class);
+                Intent intent =  new Intent(MainActivity.this, Phone_input_Screen.class);
                 startActivity(intent);
                 finish();
             }

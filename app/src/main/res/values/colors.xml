@@ -4,5 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="splash_Screen">#142328</color>
     <color name="grey">#AAABAE</color>
+    <color name="light_grey">#E6E6E6</color>
     <color name="green">#34A853</color>
+    <color name="trans">#00000000</color>
+    <color name="fondo">#FFFFFF</color>
 </resources>
