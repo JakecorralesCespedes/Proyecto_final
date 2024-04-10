@@ -1,5 +1,6 @@
 package com.unadeca.proyectofinal;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -82,8 +83,8 @@ public class pagar_carrito extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 cantidad_huaraches++;
-                actualizar_cantidad_total(cantidad2);
-                actualizar_precio_producto(subtotal);
+                actualizar_cantidad_total2(cantidad2);
+                actualizar_precio_producto2(subtotal);
             }
         });
         btnrestacar2.setOnClickListener(new View.OnClickListener() {
@@ -91,8 +92,8 @@ public class pagar_carrito extends AppCompatActivity {
             public void onClick(View v) {
                 if (cantidad_huaraches > 0) {
                     cantidad_huaraches--;
-                    actualizar_cantidad_total(cantidad2);
-                    actualizar_precio_producto(subtotal);
+                    actualizar_cantidad_total2(cantidad2);
+                    actualizar_precio_producto2(subtotal);
                 }
             }
         });
@@ -100,8 +101,8 @@ public class pagar_carrito extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 cantidad_tacos_res++;
-                actualizar_cantidad_total(cantidad3);
-                actualizar_precio_producto(subtotal);
+                actualizar_cantidad_total3(cantidad3);
+                actualizar_precio_producto3(subtotal);
             }
         });
         btnrestacar3.setOnClickListener(new View.OnClickListener() {
@@ -109,8 +110,8 @@ public class pagar_carrito extends AppCompatActivity {
             public void onClick(View v) {
                 if (cantidad_tacos_res > 0) {
                     cantidad_tacos_res--;
-                    actualizar_cantidad_total(cantidad3);
-                    actualizar_precio_producto(subtotal);
+                    actualizar_cantidad_total3(cantidad3);
+                    actualizar_precio_producto3(subtotal);
                 }
             }
         });
@@ -118,8 +119,8 @@ public class pagar_carrito extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 cantidad_bowl_carne++;
-                actualizar_cantidad_total(cantidad4);
-                actualizar_precio_producto(subtotal);
+                actualizar_cantidad_total4(cantidad4);
+                actualizar_precio_producto4(subtotal);
             }
         });
         btnrestacar4.setOnClickListener(new View.OnClickListener() {
@@ -127,37 +128,48 @@ public class pagar_carrito extends AppCompatActivity {
             public void onClick(View v) {
                 if (cantidad_bowl_carne > 0) {
                     cantidad_bowl_carne--;
-                    actualizar_cantidad_total(cantidad4);
-                    actualizar_precio_producto(subtotal);
+                    actualizar_cantidad_total4(cantidad4);
+                    actualizar_precio_producto4(subtotal);
                 }
             }
         });
     }
 
-    private void actualizar_cantidad_total(TextView cantidad1, cantidad2, cantidad3, cantidad4) {
+    private void actualizar_cantidad_total(TextView cantidad1) {
         double cantidad_total = cantidad_tacos;
         cantidad1.setText("" + cantidad_total);
-
-        double cantidad_total = cantidad_tacos;
-        cantidad2.setText("" + cantidad_total);
-
-        double cantidad_total = cantidad_tacos;
+    }
+    private void actualizar_precio_producto(TextView subtotal){
+        double CantidadTotal = cantidad_tacos * precio_tacos;
+        subtotal.setText("$" + CantidadTotal);
+    }
+        private void actualizar_cantidad_total2(TextView cantidad2) {
+            double cantidad_total = cantidad_huaraches;
+            cantidad2.setText("" + cantidad_total);
+        }
+    private void actualizar_precio_producto2(TextView subtotal){
+        double CantidadTotal = cantidad_huaraches * precio_huaraches;
+        subtotal.setText("$" + CantidadTotal);
+    }
+    private void actualizar_cantidad_total3(TextView cantidad3) {
+        double cantidad_total = cantidad_tacos_res;
         cantidad3.setText("" + cantidad_total);
+    }
+    private void actualizar_precio_producto3(TextView subtotal){
+        double CantidadTotal = cantidad_huaraches * precio_huaraches;
+        subtotal.setText("$" + CantidadTotal);
+    }
+    private void actualizar_precio_producto4(TextView subtotal) {
+        double CantidadTotal = cantidad_tacos * precio_tacos;
+        subtotal.setText("$" + CantidadTotal);
+    }
 
+    private void actualizar_cantidad_total4(TextView cantidad4) {
         double cantidad_total = cantidad_tacos;
         cantidad4.setText("" + cantidad_total);
 
-
     }
 
-        // En la actividad de origen
-
-        Intent intent = new Intent(this, Pago_final.class);
-        int Subtotal = Subtotal
-        intent.putExtra("clave", valor); // 'valor' es el dato que quieres enviar
-
-        startActivity(intent);
 
 
-    }
 }
