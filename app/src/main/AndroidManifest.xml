@@ -13,6 +13,27 @@
         android:theme="@style/Theme.ProyectoFinal"
         tools:targetApi="31">
         <activity
+            android:name=".DeliveryProcess"
+            android:exported="false" />
+        <activity
+            android:name=".Pago_final_prioridad"
+            android:exported="false" />
+        <activity
+            android:name=".Pago_final"
+            android:exported="false" />
+        <activity
+            android:name=".pagar_carrito"
+            android:exported="false" />
+        <activity
+            android:name=".Phone_input_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".tacontento_agregar_carito"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".Tacontento"
             android:exported="false" />
         <activity

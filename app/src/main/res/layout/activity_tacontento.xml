@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondo"
     tools:context=".MainActivity">
 
     <ImageView
@@ -18,6 +19,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/tacontentologo" />
+
+    <ImageView
+        android:id="@+id/atras"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:backgroundTint="#00FFFFFF"
+        app:srcCompat="@android:drawable/presence_offline" />
+
 
     <TextView
         android:id="@+id/textaco"
@@ -38,12 +47,12 @@
         android:layout_height="wrap_content"
         android:text="@string/ranking"
         android:textSize="15sp"
-        app:layout_constraintVertical_bias="0.38"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
 
     <View
         android:id="@+id/pm"
@@ -193,9 +202,9 @@
         android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="@+id/art1"
         app:layout_constraintEnd_toEndOf="@+id/art2"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="@+id/art2"
         app:layout_constraintTop_toTopOf="@+id/art2"
-        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -259,10 +268,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.626" />
 
     <TextView
         android:id="@+id/combo1"
@@ -272,10 +281,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.67" />
+        app:layout_constraintVertical_bias="0.675" />
 
     <TextView
         android:id="@+id/descrip1"
@@ -285,10 +294,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71" />
+        app:layout_constraintVertical_bias="0.722" />
 
     <TextView
         android:id="@+id/combo2"
@@ -298,10 +307,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
+        app:layout_constraintVertical_bias="0.774" />
 
     <TextView
         android:id="@+id/descrip2"
@@ -311,36 +320,63 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82" />
+        app:layout_constraintVertical_bias="0.841" />
 
     <ImageView
         android:id="@+id/tacos1"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="98.73dp"
+        android:layout_height="88dp"
         android:backgroundTint="#ECF0FB"
-        app:layout_constraintBottom_toTopOf="@+id/ranking"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="2.25"
+        app:layout_constraintVertical_bias="0.709"
         app:srcCompat="@drawable/tacoysalsa" />
 
     <ImageView
         android:id="@+id/nachos2"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="108dp"
+        android:layout_height="88dp"
         android:backgroundTint="#ECF0FB"
-        app:layout_constraintBottom_toTopOf="@+id/ranking"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="2.55"
+        app:layout_constraintVertical_bias="0.86"
         app:srcCompat="@drawable/tacosencillo" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tacos1"
+        app:layout_constraintEnd_toEndOf="@+id/tacos1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tacos1"
+        app:layout_constraintTop_toTopOf="@+id/tacos1"
+        app:layout_constraintVertical_bias="0.879"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/nachos2"
+        app:layout_constraintEnd_toEndOf="@+id/nachos2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/nachos2"
+        app:layout_constraintTop_toTopOf="@+id/nachos2"
+        app:layout_constraintVertical_bias="0.879"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
