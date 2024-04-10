@@ -277,6 +277,7 @@
                 android:src="@drawable/tipo_de_pago" />
 
             <ImageView
+                android:id="@+id/siguiente"
                 android:layout_width="372dp"
                 android:layout_height="63dp"
                 android:layout_marginStart="15dp"

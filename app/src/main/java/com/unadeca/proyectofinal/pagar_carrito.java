@@ -167,6 +167,7 @@ public class pagar_carrito extends AppCompatActivity {
     private void actualizar_cantidad_total4(TextView cantidad4) {
         double cantidad_total = cantidad_tacos;
         cantidad4.setText("" + cantidad_total);
+
     }
 
 
