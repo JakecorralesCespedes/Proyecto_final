@@ -37,9 +37,6 @@ public class Pago_final extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Pago_final.this, DeliveryProcess.class);
                 startActivity(intent);
-
-
-
             }
         });
 

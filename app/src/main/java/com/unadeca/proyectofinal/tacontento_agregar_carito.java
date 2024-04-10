@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class tacontento_agregar_carito extends AppCompatActivity {
     private int cantidadProductos = 0;
-    private double precioUnitario = 25.0; //precio del producto unitario
+    private double precioUnitario = 15.0; //precio del producto unitario
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
