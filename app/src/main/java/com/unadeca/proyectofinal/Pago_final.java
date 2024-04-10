@@ -18,11 +18,6 @@ public class Pago_final extends AppCompatActivity {
         setContentView(R.layout.activity_pago_final);
         Button btnFlechadevolverse = findViewById(R.id.flechadevolverse);
         ImageView imgSiguiente = findViewById(R.id.siguiente);
-        TextView txtSubtotal =  findViewById(R.id.usd146);
-        TextView txtTarifas =  findViewById(R.id.usd0);
-        TextView txtDelivery =  findViewById(R.id.usd380);
-        TextView txtTotal =  findViewById(R.id.usd14980);
-
 
         btnFlechadevolverse.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,9 +34,10 @@ public class Pago_final extends AppCompatActivity {
                 startActivity(intent);
 
 
-
             }
+
         });
+
 
     }
 
