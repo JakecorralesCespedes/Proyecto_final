@@ -1,9 +1,5 @@
-// integrantes gabriela,Jake,Eddie
-
-
+// integrantes gabriela Sarmento,Jake Corrales,Eddie Ponce
 package com.unadeca.proyectofinal;
-
-
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
