@@ -1,4 +1,4 @@
-// integrantes gabriela,Jake//Eddie
+// integrantes gabriela,Jake,Eddie
 
 
 package com.unadeca.proyectofinal;
