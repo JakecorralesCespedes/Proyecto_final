@@ -1,3 +1,4 @@
+// integrantes gabriela Sarmento,Jake Corrales,Eddie Ponce
 package com.unadeca.proyectofinal;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class pagar_carrito extends AppCompatActivity {
-    private int cantidad_tacos = 0;
+    private int cantidad_tacos = 3;
     private double precio_tacos = 15;
 
     private int cantidad_huaraches = 0;
@@ -22,6 +23,8 @@ public class pagar_carrito extends AppCompatActivity {
     private int cantidad_bowl_carne = 0;
 
     private double precio_bowl_carne = 12;
+
+    private double envio =1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +69,8 @@ public class pagar_carrito extends AppCompatActivity {
                 actualizar_cantidad_total(cantidad1);
                 actualizar_precio_producto();
                 subtotal_final(subtotal);
+                total(total);
+
             }
         });
         btnrestacar1.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +81,7 @@ public class pagar_carrito extends AppCompatActivity {
                     actualizar_cantidad_total(cantidad1);
                     actualizar_precio_producto();
                     subtotal_final(subtotal);
+                    total(total);
 
                 }
             }
@@ -87,6 +93,7 @@ public class pagar_carrito extends AppCompatActivity {
                 actualizar_cantidad_total2(cantidad2);
                 actualizar_precio_producto2();
                 subtotal_final(subtotal);
+                total(total);
 
             }
         });
@@ -98,6 +105,7 @@ public class pagar_carrito extends AppCompatActivity {
                     actualizar_cantidad_total2(cantidad2);
                     actualizar_precio_producto2();
                     subtotal_final(subtotal);
+                    total(total);
 
                 }
             }
@@ -109,6 +117,7 @@ public class pagar_carrito extends AppCompatActivity {
                 actualizar_cantidad_total3(cantidad3);
                 actualizar_precio_producto3();
                 subtotal_final(subtotal);
+                total(total);
 
             }
         });
@@ -120,6 +129,7 @@ public class pagar_carrito extends AppCompatActivity {
                     actualizar_cantidad_total3(cantidad3);
                     actualizar_precio_producto3();
                     subtotal_final(subtotal);
+                    total(total);
 
                 }
             }
@@ -131,6 +141,7 @@ public class pagar_carrito extends AppCompatActivity {
                 actualizar_cantidad_total4(cantidad4);
                 actualizar_precio_producto4();
                 subtotal_final(subtotal);
+                total(total);
 
             }
         });
@@ -142,6 +153,7 @@ public class pagar_carrito extends AppCompatActivity {
                     actualizar_cantidad_total4(cantidad4);
                     actualizar_precio_producto4();
                     subtotal_final(subtotal);
+                    total(total);
 
                 }
             }
@@ -186,8 +198,19 @@ public class pagar_carrito extends AppCompatActivity {
         double subtotal4 = actualizar_precio_producto4();
 
         double subtotalFinal = subtotal1 + subtotal2 + subtotal3 + subtotal4;
-        subtotal.setText("" + subtotalFinal);
+        subtotal.setText("$" + subtotalFinal);
+
     }
+private void total(TextView total){
+    double subtotal1 = actualizar_precio_producto();
+    double subtotal2 = actualizar_precio_producto2();
+    double subtotal3 = actualizar_precio_producto3();
+    double subtotal4 = actualizar_precio_producto4();
+
+    double totalfinal = subtotal1 + subtotal2 + subtotal3 + subtotal4 + envio* 3.8 ;
+    total.setText("$" + totalfinal);
+
+}
 
 
 

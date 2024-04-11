@@ -1,3 +1,4 @@
+// integrantes gabriela Sarmento,Jake Corrales,Eddie Ponce
 package com.unadeca.proyectofinal;
 
 import android.content.Intent;

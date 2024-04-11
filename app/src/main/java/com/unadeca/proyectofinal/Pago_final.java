@@ -1,14 +1,15 @@
+// integrantes gabriela Sarmento,Jake Corrales,Eddie Ponce
 package com.unadeca.proyectofinal;
 
-import androidx.appcompat.app.AppCompatActivity;
+        import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ClipData;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+        import android.content.ClipData;
+        import android.content.Intent;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.ImageView;
+        import android.widget.TextView;
 
 public class Pago_final extends AppCompatActivity {
 
